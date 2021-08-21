@@ -94,7 +94,7 @@ const renderProgram = (program) => {
                     <span class="card-title">${category.categoryName}</span>
                     <div class="card-date">2021-04-22</div>
                     <div class="card-creator">
-                      <img src="https://avatars.dicebear.com/api/avataaars/${Math.floor(Math.random() * 1000)}.svg" width="25px" />
+                      <img src="https://avatars.dicebear.com/api/avataaars/${Math.floor(Math.random() * 10)}.svg" width="25px" />
                       <div class="card-creator-name">Ms. Lorem Ipsum</div>
                     </div>
                     <div class="card-actions">
