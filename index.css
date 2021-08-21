@@ -1,0 +1,101 @@
+:root {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#target {
+  margin: 2rem 2rem 0 0;
+}
+
+.button {
+  padding: .5rem .75rem;
+}
+
+.card-data {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto auto auto auto;
+  gap: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 1.5rem;
+  align-items: center;
+  background-color: hsl(33, 19%, 96%);
+}
+
+.card-date,
+.card-creator {
+  font-size: .75rem;
+}
+
+.card-creator,
+.card-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-actions {
+  font-weight: bold;
+}
+
+.card-creator-name,
+.card-actions-add {
+  margin-left: .5rem;
+}
+
+.card-creator img {
+  background-color: azure;
+  border-radius: 50%;
+}
+
+.card-actions-more {
+  position: relative;
+  top: -.22rem;
+}
+
+.card-expand {
+  cursor: pointer;
+}
+
+.card-holder {
+  margin-left: 1.5rem;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.card {
+  margin-top: .35rem;
+  position: relative;
+  z-index: 1;
+}
+
+.program-card .card::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: .75rem;
+  height: 1rem;
+  border-left: black solid 1px;
+  border-bottom: black solid 1px;
+  left: -.75rem;
+  top: 2rem;
+  z-index: -100;
+}
+.program-cards .card-holder {
+  box-shadow: black -1px 0px 0px 0px;
+  padding-left: calc(.75rem - 1px);
+}
+
+.sub-category-card .card-data > .card-expand {
+  visibility: hidden;
+}
+
+.card-expand {
+  transform: rotate(0deg);
+  transition: transform .5s;
+}
+
+.card-expand.up {
+  transform: rotate(180deg);
+}
